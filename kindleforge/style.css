@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-  
+
 body {
     font-family: "Inter", system-ui, sans-serif;
     color: #111827;
@@ -12,76 +12,73 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-  
+
 .container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
 }
-  
 
 header {
     border-bottom: 1px solid #e5e7eb;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem 2rem 1rem;
     text-align: center;
     width: 100%;
 }
-  
+
 h1 {
     font-family: "Libre Baskerville", Georgia, serif;
     font-size: 1.5rem;
 }
-  
+
 main {
     width: 100%;
-    padding: 2rem 1rem;
+    padding-bottom: 2rem;
     flex: 1;
 }
-  
+
 .app-card {
-    border: 1px solid #d1d5db;
+    border: 1px solid #9ca3af;
     border-radius: 0.5rem;
-    padding: 1.5rem;
-    background-color: #f9fafb;
-    margin-bottom: 1.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
     width: 100%;
     max-width: 100%;
 }
-  
+
 .app-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     width: 100%;
 }
-  
+
+.app-title-box {
+    flex: 1;
+}
+
 .app-title {
     font-family: "Libre Baskerville", Georgia, serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 0.25rem;
 }
-  
+
 .app-author {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     color: #4b5563;
 }
-  
-.app-downloads {
-    font-size: 0.875rem;
-    color: #4b5563;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-}
-  
+
 .app-description {
     color: #374151;
-    margin-bottom: 1rem;
-    line-height: 1.625;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+    font-size: 0.875rem;
 }
-  
+
 .install-button {
     width: 100%;
     display: flex;
@@ -96,13 +93,14 @@ main {
     color: inherit;
     cursor: pointer;
     transition: background-color 0.2s, color 0.2s;
+    font-size: 0.875rem;
 }
-  
+
 .install-button:hover {
     background-color: #111827;
     color: white;
 }
-  
+
 footer {
     border-top: 1px solid #e5e7eb;
     padding: 1rem;
@@ -111,7 +109,7 @@ footer {
     color: #4b5563;
     width: 100%;
 }
-  
+
 .icon {
     width: 1em;
     height: 1em;
@@ -121,13 +119,14 @@ footer {
     stroke-linejoin: round;
     fill: none;
 }
-  
+
 @media (min-width: 768px) {
     main {
-      padding: 2rem 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
-    
+
     .app-card {
-      padding: 2rem;
+        padding: 1.5rem;
     }
 }
